@@ -7,7 +7,7 @@ const Layout = () => {
       <header className="border-b-2 py-5 px-24 shadow-md rounded-xl">
         <NavBar />
       </header>
-      <div className="bg-gray-100 h-screen py-4 px-10">
+      <div className="bg-gray-100 min-h-screen">
         <Outlet />
       </div>
     </>

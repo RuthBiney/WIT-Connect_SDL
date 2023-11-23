@@ -1,12 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import { aboutUs, contact } from "../utils/links";
+import { aboutUs, contact, signIn } from "../utils/links";
 
 const NavBar = () => {
   return (
     <div className="flex justify-between items-center">
-      <Logo />
-      <ul className="flex space-x-10 items-center text-orange-500">
+      <Link to="/">
+        <Logo />
+      </Link>
+      <ul className="flex space-x-16 items-center text-orange-500 text-lg">
         <li className="hover:underline">
           <NavLink
             to="/"
@@ -32,6 +34,12 @@ const NavBar = () => {
           </NavLink>
         </li>
       </ul>
+      <Link
+        to={`/${signIn}`}
+        className="border py-2 px-4 rounded-lg bg-orange-800 text-white hover:bg-orange-700"
+      >
+        Sign In
+      </Link>
     </div>
   );
 };
