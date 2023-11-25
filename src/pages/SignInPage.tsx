@@ -15,16 +15,16 @@ const SignInPage = () => {
   };
   return (
     <section className="pt-10 space-y-8">
-      <h1 className="text-3xl text-center uppercase font-bold text-orange-500">
+      <h1 className="text-3xl font-bold text-center text-orange-500 uppercase">
         Sign In
       </h1>
       <form className="flex flex-col items-center">
-        <div className="w-3/6 border-2 p-6 shadow-lg space-y-6">
+        <div className="p-6 space-y-6 border-2 shadow-lg lg:w-3/6">
           <label className="flex flex-col">
             Email
             <input
               type="email"
-              className="rounded-xl h-8 border px-4 py-6"
+              className="h-8 px-4 py-6 border rounded-xl"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -33,14 +33,14 @@ const SignInPage = () => {
             Password
             <input
               type="password"
-              className="rounded-xl h-8 border px-4 py-6"
+              className="h-8 px-4 py-6 border rounded-xl"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </label>
-                                                     
+
           <button
-            className="border py-3 px-8 rounded-xl bg-orange-800 text-white"
+            className="px-8 py-3 text-white bg-orange-800 border rounded-xl"
             onClick={handleSubmit}
           >
             Submit
