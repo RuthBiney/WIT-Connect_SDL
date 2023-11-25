@@ -2,7 +2,6 @@ import { FieldValues, useForm } from "react-hook-form";
 import { z } from "zod";
 import Input from "../components/Input";
 import { zodResolver } from "@hookform/resolvers/zod";
-
 type inputType = {
   label: string;
   value: keyof FormData;
@@ -58,7 +57,7 @@ const SignUpPage = () => {
         Create an account
       </h1>
       <form className="flex flex-col items-center">
-        <div className="w-3/6 p-6 space-y-6 border-2 shadow-lg">
+        <div className="p-6 space-y-6 border-2 shadow-lg lg:w-3/6">
           {inputs.map(({ label, value, type }) => (
             <div>
               <Input
@@ -69,7 +68,7 @@ const SignUpPage = () => {
                 register={register}
               />
               {errors[value] && (
-                <p className="text-red-500">{errors[value]?.message}</p>
+                <p className="text-sm text-red-500">{errors[value]?.message}</p>
               )}
             </div>
           ))}
