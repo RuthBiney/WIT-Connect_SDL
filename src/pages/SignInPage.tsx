@@ -19,7 +19,7 @@ const SignInPage = () => {
         Sign In
       </h1>
       <form className="flex flex-col items-center">
-        <div className="p-6 space-y-6 border-2 shadow-lg lg:w-3/6">
+        <div className="w-5/6 p-6 space-y-6 border-2 shadow-lg md:w-4/6 lg:w-3/6">
           <label className="flex flex-col">
             Email
             <input

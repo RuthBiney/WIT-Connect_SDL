@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
       <header className="pt-32 bg-[url('hero.jpg')]  h-screen">
-        <div className="flex flex-col items-center justify-center mx-4 space-y-12 text-center text-white rounded-lg h-3/4 bg-white/30">
+        <div className="flex flex-col items-center justify-center mx-4 space-y-12 text-center text-white rounded-lg md:mx-8 lg:mx-32 h-3/4 bg-white/50">
           <h1 className="text-4xl font-bold text-orange-500">
             WIT <span className="text-orange-900">CONNECT</span>
           </h1>
