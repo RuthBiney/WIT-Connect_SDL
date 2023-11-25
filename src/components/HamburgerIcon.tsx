@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Hamburger from "hamburger-react";
 import { Link } from "react-router-dom";
 import { aboutUs, contact, signIn } from "../utils/links";
