@@ -17,7 +17,7 @@ const AboutPage = () => {
       </section>
 
       <section className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:text-xl">
-        <article className="col-span-2 p-4 space-y-4 bg-orange-200 border lg:px-10">
+        <article className="p-4 space-y-4 bg-orange-200 border md:col-span-2 lg:px-10">
           <h2 className="text-xl font-bold lg:text-xl">Our Mission</h2>
           <p className="">
             WIT Connect is more than an app; it's a movement. We strive to
@@ -62,7 +62,7 @@ const AboutPage = () => {
             </ul>
           </p>
         </article>
-        <article className="col-span-2 p-4 space-y-4 bg-orange-200 border lg:px-10">
+        <article className="p-4 space-y-4 bg-orange-200 border md:col-span-2 lg:px-10">
           <h2 className="text-xl font-bold lg:text-xl ">
             Ensuring User Engagement and Safety
           </h2>
@@ -74,7 +74,7 @@ const AboutPage = () => {
           </p>
         </article>
       </section>
-      <section className="flex flex-col w-3/5 gap-4 mx-auto mt-10 ">
+      <section className="flex flex-col gap-4 mx-auto mt-10 md:w-3/5 ">
         <h2 className="text-3xl font-bold text-center text-orange-500">
           Join the Movement
         </h2>
