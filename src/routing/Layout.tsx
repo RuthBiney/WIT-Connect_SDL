@@ -4,10 +4,10 @@ import NavBar from "../components/NavBar";
 const Layout = () => {
   return (
     <>
-      <header className="border-b-2 py-5 px-24 shadow-md rounded-xl">
+      <header className="px-6 py-3 border-b-2 shadow-md md:py-5 md:px-12 lg:px-24">
         <NavBar />
       </header>
-      <div className="bg-gray-100 min-h-screen">
+      <div className="min-h-screen bg-gray-100">
         <Outlet />
       </div>
     </>
