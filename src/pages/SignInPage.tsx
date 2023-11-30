@@ -51,10 +51,7 @@ const SignInPage = () => {
             <p className="text-sm text-red-500">{errors.password?.message}</p>
           </div>
 
-          <button
-            className="px-8 py-3 text-white bg-orange-800 border rounded-xl"
-            onClick={handleSubmit}
-          >
+          <button className="px-8 py-3 text-white bg-orange-800 border rounded-xl">
             Submit
           </button>
         </div>

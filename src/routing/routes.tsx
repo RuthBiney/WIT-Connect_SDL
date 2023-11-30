@@ -3,9 +3,16 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import Layout from "./Layout";
-import { aboutUs, contact, signIn, signUp } from "../utils/links";
+import {
+  aboutUs,
+  contact,
+  newOpportunity,
+  signIn,
+  signUp,
+} from "../utils/links";
 import SignUpPage from "../pages/SignUpPage";
 import SignInPage from "../pages/SignInPage";
+import PostOpportunities from "../pages/PostOpportunities";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: signIn,
         element: <SignInPage />,
+      },
+      {
+        path: newOpportunity,
+        element: <PostOpportunities />,
       },
     ],
   },

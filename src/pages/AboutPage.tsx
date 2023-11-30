@@ -53,14 +53,12 @@ const AboutPage = () => {
           <p>
             Our approach is informed by thorough research and active
             collaborations
-            <ul>
-              <li>Surveys to understand barriers women face in tech.</li>
-              <li>
-                Partnerships with tech organizations and local initiatives.
-              </li>
-              <li>Insights from the ALU community and beyond.</li>
-            </ul>
           </p>
+          <ul>
+            <li>Surveys to understand barriers women face in tech.</li>
+            <li>Partnerships with tech organizations and local initiatives.</li>
+            <li>Insights from the ALU community and beyond.</li>
+          </ul>
         </article>
         <article className="p-4 space-y-4 bg-orange-200 border md:col-span-2 lg:px-10">
           <h2 className="text-xl font-bold lg:text-xl ">
