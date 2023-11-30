@@ -1,43 +1,55 @@
-import { FormEvent, useState } from "react";
+import Input from "../components/Input";
+import { FieldValues, useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const schema = z.object({
+  email: z.string().email(),
+  password: z.string().min(8, {
+    message: "Your password should should be at least 8 characters long",
+  }),
+});
+
+type FormData = z.infer<typeof schema>;
 
 const SignInPage = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<FormData>({ resolver: zodResolver(schema) });
 
-  const data = {
-    email,
-    password,
-  };
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
+  const onSubmit = (data: FieldValues) => {
     console.log(data);
+    reset();
   };
+
   return (
     <section className="pt-10 space-y-8">
       <h1 className="text-3xl font-bold text-center text-orange-500 uppercase">
         Sign In
       </h1>
-      <form className="flex flex-col items-center">
+      <form
+        className="flex flex-col items-center"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <div className="w-5/6 p-6 space-y-6 border-2 shadow-lg md:w-4/6 lg:w-3/6">
-          <label className="flex flex-col">
-            Email
-            <input
-              type="email"
-              className="h-8 px-4 py-6 border rounded-xl"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </label>
-          <label className="flex flex-col">
-            Password
-            <input
+          <div>
+            <Input label="Email" name="email" register={register} />
+            {errors.email && (
+              <p className="text-sm text-red-500">{errors.email?.message}</p>
+            )}
+          </div>
+          <div>
+            <Input
+              label="Password"
+              name="password"
               type="password"
-              className="h-8 px-4 py-6 border rounded-xl"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              register={register}
             />
-          </label>
+            <p className="text-sm text-red-500">{errors.password?.message}</p>
+          </div>
 
           <button
             className="px-8 py-3 text-white bg-orange-800 border rounded-xl"

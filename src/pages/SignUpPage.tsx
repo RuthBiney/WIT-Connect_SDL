@@ -2,6 +2,7 @@ import { FieldValues, useForm } from "react-hook-form";
 import { z } from "zod";
 import Input from "../components/Input";
 import { zodResolver } from "@hookform/resolvers/zod";
+
 type inputType = {
   label: string;
   value: keyof FormData;
