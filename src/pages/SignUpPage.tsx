@@ -2,6 +2,8 @@ import { FieldValues, useForm } from "react-hook-form";
 import { z } from "zod";
 import Input from "../components/Input";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Link, useNavigate } from "react-router-dom";
+import { signIn } from "../utils/links";
 
 type inputType = {
   label: string;
@@ -38,6 +40,7 @@ const schema = z
 type FormData = z.infer<typeof schema>;
 
 const SignUpPage = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -50,6 +53,8 @@ const SignUpPage = () => {
   const onSubmit = (data: FieldValues) => {
     console.log(data);
     reset();
+    alert("Account created successfully! 🎉🎊");
+    navigate(`/${signIn}`);
   };
 
   return (
@@ -76,6 +81,15 @@ const SignUpPage = () => {
           <button className="px-8 py-3 text-white bg-orange-800 border rounded-xl">
             Submit
           </button>
+          <div className="flex space-x-3">
+            <p>Already have an account?</p>
+            <Link
+              to={`/${signIn}`}
+              className="font-semibold text-orange-500 hover:underline hover:text-orange-900"
+            >
+              Sign In
+            </Link>
+          </div>
         </div>
       </form>
     </section>

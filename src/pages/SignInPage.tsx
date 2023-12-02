@@ -2,6 +2,8 @@ import Input from "../components/Input";
 import { FieldValues, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Link, useNavigate } from "react-router-dom";
+import { opportunities, signUp } from "../utils/links";
 
 const schema = z.object({
   email: z.string().email(),
@@ -13,6 +15,7 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 const SignInPage = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -23,6 +26,7 @@ const SignInPage = () => {
   const onSubmit = (data: FieldValues) => {
     console.log(data);
     reset();
+    navigate(`/${opportunities}`);
   };
 
   return (
@@ -54,6 +58,15 @@ const SignInPage = () => {
           <button className="px-8 py-3 text-white bg-orange-800 border rounded-xl">
             Submit
           </button>
+          <div className="flex space-x-3">
+            <p>Don't have an account?</p>
+            <Link
+              to={`/${signUp}`}
+              className="font-semibold text-orange-500 hover:underline hover:text-orange-900"
+            >
+              Register
+            </Link>
+          </div>
         </div>
       </form>
     </section>

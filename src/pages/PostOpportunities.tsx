@@ -7,6 +7,7 @@ const PostOpportunities = () => {
   const onSubmit = (data: FieldValues) => {
     console.log(data);
     reset();
+    alert("Opportunity added successfully! 🎉🎊. ");
   };
 
   return (

@@ -1,0 +1,337 @@
+{
+  "users": [
+    {
+      "first_name": "Kyle",
+      "last_name": "Patterson",
+      "email": "thomasstone@gmail.com",
+      "password": "Pass3640"
+    },
+    {
+      "first_name": "Erin",
+      "last_name": "Campbell",
+      "email": "lorimay@hardin.org",
+      "password": "Pass3894"
+    },
+    {
+      "first_name": "Stephen",
+      "last_name": "Johnson",
+      "email": "carrie40@chapman.com",
+      "password": "Pass7496"
+    },
+    {
+      "first_name": "Angela",
+      "last_name": "Roth",
+      "email": "tylersmith@gmail.com",
+      "password": "Pass6213"
+    },
+    {
+      "first_name": "Kelsey",
+      "last_name": "Orr",
+      "email": "collierarthur@gmail.com",
+      "password": "Pass4486"
+    },
+    {
+      "first_name": "Christopher",
+      "last_name": "Smith",
+      "email": "josephsalazar@yahoo.com",
+      "password": "Pass5740"
+    },
+    {
+      "first_name": "Laura",
+      "last_name": "Sanders",
+      "email": "maynardjacob@yahoo.com",
+      "password": "Pass1865"
+    },
+    {
+      "first_name": "Ian",
+      "last_name": "Quinn",
+      "email": "sbrown@richardson.com",
+      "password": "Pass3920"
+    },
+    {
+      "first_name": "Kenneth",
+      "last_name": "Hoffman",
+      "email": "khodges@shields.com",
+      "password": "Pass6600"
+    },
+    {
+      "first_name": "Kenneth",
+      "last_name": "Shelton",
+      "email": "larryharris@santiago.com",
+      "password": "Pass8781"
+    },
+    {
+      "first_name": "Henry",
+      "last_name": "Esparza",
+      "email": "bowmansean@heath.com",
+      "password": "Pass3521"
+    },
+    {
+      "first_name": "Sarah",
+      "last_name": "Phillips",
+      "email": "landrycatherine@fields.com",
+      "password": "Pass2332"
+    },
+    {
+      "first_name": "Jennifer",
+      "last_name": "Day",
+      "email": "ramirezcarolyn@zimmerman.biz",
+      "password": "Pass9292"
+    },
+    {
+      "first_name": "Chris",
+      "last_name": "Curtis",
+      "email": "laura05@collins.com",
+      "password": "Pass5461"
+    },
+    {
+      "first_name": "Benjamin",
+      "last_name": "Newman",
+      "email": "moorejuan@gmail.com",
+      "password": "Pass6277"
+    }
+  ],
+
+  "posts": [
+    {
+      "id": 1,
+      "title": "Opportunity Title 38",
+      "company_name": "Company 26",
+      "description": "Description of opportunity 88",
+      "opportunity_type": "permanent",
+      "job_preference": "hybrid",
+      "shift_and_schedule": "holidays",
+      "remuneration": "hourly wage",
+      "location": "Lagos, Nigeria",
+      "application_link": "https://www.example.com/apply/6"
+    },
+    {
+      "id": 2,
+      "title": "Opportunity Title 51",
+      "company_name": "Company 66",
+      "description": "Description of opportunity 11",
+      "opportunity_type": "permanent",
+      "job_preference": "remote",
+      "shift_and_schedule": "weekend availability",
+      "remuneration": "negotiable",
+      "location": "Berlin, Germany",
+      "application_link": "https://www.example.com/apply/5"
+    },
+    {
+      "id": 3,
+      "title": "Opportunity Title 31",
+      "company_name": "Company 73",
+      "description": "Description of opportunity 43",
+      "opportunity_type": "full-time",
+      "job_preference": "hybrid",
+      "shift_and_schedule": "weekend availability",
+      "remuneration": "commission-based",
+      "location": "Toronto, Canada",
+      "application_link": "https://www.example.com/apply/26"
+    },
+    {
+      "id": 4,
+      "title": "Opportunity Title 65",
+      "company_name": "Company 21",
+      "description": "Description of opportunity 55",
+      "opportunity_type": "permanent",
+      "job_preference": "hybrid",
+      "shift_and_schedule": "holidays",
+      "remuneration": "stipend",
+      "location": "Nairobi, Kenya",
+      "application_link": "https://www.example.com/apply/62"
+    },
+    {
+      "id": 5,
+      "title": "Opportunity Title 86",
+      "company_name": "Company 35",
+      "description": "Description of opportunity 16",
+      "opportunity_type": "permanent",
+      "job_preference": "hybrid",
+      "shift_and_schedule": "weekdays availability",
+      "remuneration": "unpaid",
+      "location": "Nairobi, Kenya",
+      "application_link": "https://www.example.com/apply/46"
+    },
+    {
+      "id": 6,
+      "title": "Opportunity Title 27",
+      "company_name": "Company 62",
+      "description": "Description of opportunity 20",
+      "opportunity_type": "part-time",
+      "job_preference": "on site",
+      "shift_and_schedule": "weekend availability",
+      "remuneration": "commission-based",
+      "location": "Berlin, Germany",
+      "application_link": "https://www.example.com/apply/66"
+    },
+    {
+      "id": 7,
+      "title": "Opportunity Title 2",
+      "company_name": "Company 24",
+      "description": "Description of opportunity 40",
+      "opportunity_type": "part-time",
+      "job_preference": "on site",
+      "shift_and_schedule": "holidays",
+      "remuneration": "hourly wage",
+      "location": "Tokyo, Japan",
+      "application_link": "https://www.example.com/apply/93"
+    },
+    {
+      "id": 8,
+      "title": "Opportunity Title 49",
+      "company_name": "Company 58",
+      "description": "Description of opportunity 71",
+      "opportunity_type": "part-time",
+      "job_preference": "remote",
+      "shift_and_schedule": "holidays",
+      "remuneration": "negotiable",
+      "location": "London, UK",
+      "application_link": "https://www.example.com/apply/47"
+    },
+    {
+      "id": 9,
+      "title": "Opportunity Title 76",
+      "company_name": "Company 76",
+      "description": "Description of opportunity 25",
+      "opportunity_type": "part-time",
+      "job_preference": "on site",
+      "shift_and_schedule": "weekdays availability",
+      "remuneration": "hourly wage",
+      "location": "San Francisco, USA",
+      "application_link": "https://www.example.com/apply/91"
+    },
+    {
+      "id": 10,
+      "title": "Opportunity Title 31",
+      "company_name": "Company 40",
+      "description": "Description of opportunity 25",
+      "opportunity_type": "part-time",
+      "job_preference": "on site",
+      "shift_and_schedule": "holidays",
+      "remuneration": "hourly wage",
+      "location": "Lagos, Nigeria",
+      "application_link": "https://www.example.com/apply/100"
+    },
+    {
+      "id": 11,
+      "title": "Opportunity Title 74",
+      "company_name": "Company 75",
+      "description": "Description of opportunity 10",
+      "opportunity_type": "permanent",
+      "job_preference": "hybrid",
+      "shift_and_schedule": "weekdays availability",
+      "remuneration": "negotiable",
+      "location": "London, UK",
+      "application_link": "https://www.example.com/apply/67"
+    },
+    {
+      "id": 12,
+      "title": "Opportunity Title 90",
+      "company_name": "Company 22",
+      "description": "Description of opportunity 30",
+      "opportunity_type": "part-time",
+      "job_preference": "remote",
+      "shift_and_schedule": "weekend availability",
+      "remuneration": "unpaid",
+      "location": "Berlin, Germany",
+      "application_link": "https://www.example.com/apply/94"
+    },
+    {
+      "id": 13,
+      "title": "Opportunity Title 11",
+      "company_name": "Company 62",
+      "description": "Description of opportunity 5",
+      "opportunity_type": "permanent",
+      "job_preference": "hybrid",
+      "shift_and_schedule": "weekdays availability",
+      "remuneration": "hourly wage",
+      "location": "Tokyo, Japan",
+      "application_link": "https://www.example.com/apply/88"
+    },
+    {
+      "id": 14,
+      "title": "Opportunity Title 17",
+      "company_name": "Company 38",
+      "description": "Description of opportunity 53",
+      "opportunity_type": "permanent",
+      "job_preference": "remote",
+      "shift_and_schedule": "holidays",
+      "remuneration": "hourly wage",
+      "location": "Berlin, Germany",
+      "application_link": "https://www.example.com/apply/53"
+    },
+    {
+      "id": 15,
+      "title": "Opportunity Title 45",
+      "company_name": "Company 27",
+      "description": "Description of opportunity 88",
+      "opportunity_type": "part-time",
+      "job_preference": "remote",
+      "shift_and_schedule": "weekend availability",
+      "remuneration": "unpaid",
+      "location": "Cape Town, South Africa",
+      "application_link": "https://www.example.com/apply/21"
+    },
+    {
+      "id": 16,
+      "title": "Opportunity Title 37",
+      "company_name": "Company 86",
+      "description": "Description of opportunity 76",
+      "opportunity_type": "part-time",
+      "job_preference": "hybrid",
+      "shift_and_schedule": "weekend availability",
+      "remuneration": "commission-based",
+      "location": "Sydney, Australia",
+      "application_link": "https://www.example.com/apply/3"
+    },
+    {
+      "id": 17,
+      "title": "Opportunity Title 52",
+      "company_name": "Company 60",
+      "description": "Description of opportunity 27",
+      "opportunity_type": "part-time",
+      "job_preference": "on site",
+      "shift_and_schedule": "weekdays availability",
+      "remuneration": "negotiable",
+      "location": "San Francisco, USA",
+      "application_link": "https://www.example.com/apply/13"
+    },
+    {
+      "id": 18,
+      "title": "Opportunity Title 21",
+      "company_name": "Company 32",
+      "description": "Description of opportunity 83",
+      "opportunity_type": "full-time",
+      "job_preference": "remote",
+      "shift_and_schedule": "weekdays availability",
+      "remuneration": "stipend",
+      "location": "Tokyo, Japan",
+      "application_link": "https://www.example.com/apply/45"
+    },
+    {
+      "id": 19,
+      "title": "Opportunity Title 93",
+      "company_name": "Company 45",
+      "description": "Description of opportunity 71",
+      "opportunity_type": "permanent",
+      "job_preference": "hybrid",
+      "shift_and_schedule": "weekend availability",
+      "remuneration": "commission-based",
+      "location": "Tokyo, Japan",
+      "application_link": "https://www.example.com/apply/100"
+    },
+    {
+      "id": 20,
+      "title": "Opportunity Title 33",
+      "company_name": "Company 38",
+      "description": "Description of opportunity 57",
+      "opportunity_type": "part-time",
+      "job_preference": "hybrid",
+      "shift_and_schedule": "weekdays availability",
+      "remuneration": "stipend",
+      "location": "Lagos, Nigeria",
+      "application_link": "https://www.example.com/apply/11"
+    }
+  ]
+}

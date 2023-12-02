@@ -1,9 +1,9 @@
 const AboutPage = () => {
   return (
-    <div className="px-5 pt-5 pb-16 lg:w-5/6 lg:mx-auto">
-      <section className="flex flex-col gap-3 mb-6 md:gap-5">
-        <h1 className="text-3xl font-bold text-center text-orange-800 lg:text-5xl">
-          Welcome to WIT Connect
+    <div className="px-5 pt-5 pb-16 bg-gray-100 lg:w-5/6 lg:mx-auto">
+      <section className="flex flex-col gap-5 mb-6">
+        <h1 className="text-3xl font-bold text-center text-orange-800 lg:text-3xl md:mb-4">
+          About Us
         </h1>
         <h2 className="text-2xl font-semibold text-orange-500 lg:text-3xl">
           Empowering Women in Technology

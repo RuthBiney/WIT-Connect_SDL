@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import { aboutUs, contact, signIn } from "../utils/links";
+import { newOpportunity, opportunities, signIn, signUp } from "../utils/links";
 import HamburgerIcon from "./HamburgerIcon";
 
 const NavBar = () => {
@@ -19,22 +19,25 @@ const NavBar = () => {
               Home
             </NavLink>
           </li>
+
           <li className="hover:underline">
             <NavLink
-              to={aboutUs}
+              to={`/${opportunities}`}
               className={({ isActive }) => (isActive ? "font-bold" : "")}
             >
-              About Us
+              Available Opportunities
             </NavLink>
           </li>
+
           <li className="hover:underline">
             <NavLink
-              to={contact}
+              to={`/${newOpportunity}`}
               className={({ isActive }) => (isActive ? "font-bold" : "")}
             >
-              Contact
+              Post Opportunity
             </NavLink>
           </li>
+
           <li>
             <Link
               to={`/${signIn}`}
@@ -43,9 +46,18 @@ const NavBar = () => {
               Sign In
             </Link>
           </li>
+
+          <li>
+            <Link
+              to={`/${signUp}`}
+              className="px-4 py-2 text-white bg-orange-800 border rounded-lg hover:-orange-700"
+            >
+              Sign Up
+            </Link>
+          </li>
         </ul>
       </div>
-      <HamburgerIcon></HamburgerIcon>
+      <HamburgerIcon />
     </div>
   );
 };

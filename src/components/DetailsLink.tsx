@@ -6,6 +6,14 @@ interface Props {
 }
 
 const DetailsLink = ({ id }: Props) => {
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <div>
@@ -18,6 +26,7 @@ const DetailsLink = ({ id }: Props) => {
         <Link
           to={`/${opportunities}/${id}`}
           className="hidden text-blue-500 lg:block"
+          onClick={handleClick}
         >
           More...
         </Link>
