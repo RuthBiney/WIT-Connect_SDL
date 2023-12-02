@@ -21,7 +21,7 @@ const Input = <T extends FieldValues>({
       <input
         type={type}
         placeholder={placeholder}
-        className="h-8 px-4 py-6 border rounded-xl"
+        className="h-8 px-4 py-6 border border-orange-900 rounded-xl"
         autoComplete="true"
         {...register(name as Path<T>)}
       />

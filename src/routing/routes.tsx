@@ -7,12 +7,16 @@ import {
   aboutUs,
   contact,
   newOpportunity,
+  opportunities,
   signIn,
   signUp,
 } from "../utils/links";
 import SignUpPage from "../pages/SignUpPage";
 import SignInPage from "../pages/SignInPage";
 import PostOpportunities from "../pages/PostOpportunities";
+import OpportunitiesPage from "../pages/OpportunitiesPage";
+import OpportunityDetails from "../components/OpportunityDetails";
+import OpportunityDetailsPage from "../pages/OpportunityDetailsPage";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +46,20 @@ const router = createBrowserRouter([
       {
         path: newOpportunity,
         element: <PostOpportunities />,
+      },
+      {
+        path: opportunities,
+        element: <OpportunitiesPage />,
+        children: [
+          {
+            path: ":id",
+            element: <OpportunityDetails />,
+          },
+        ],
+      },
+      {
+        path: "opportunities/details/:id",
+        element: <OpportunityDetailsPage />,
       },
     ],
   },
