@@ -18,11 +18,14 @@ const PostOpportunities = () => {
         className="flex flex-col items-center"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="w-5/6 px-6 py-8 space-y-6 border-2 shadow-lg md:w-4/6 lg:w-3/6">
-          <div>
+        <div className="w-5/6 px-6 py-8 space-y-6 border-2 shadow-lg md:w-4/6 lg:grid lg:grid-cols-4 lg:gap-4">
+          <div className="lg:col-span-2 lg:self-end">
             <Input label="Title" name="title" register={register} />
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="col-span-2 lg:row-start-2">
+            <Input label="Company Name" name="company" register={register} />
+          </div>
+          <div className="flex flex-col gap-1 lg:grid lg:row-start-4 lg:col-start-1 lg:col-span-full ">
             <label
               htmlFor="description"
               className="font-semibold text-orange-500"
@@ -31,12 +34,12 @@ const PostOpportunities = () => {
             </label>
             <textarea
               id="description"
-              rows={5}
+              rows={6}
               className="w-full px-4 py-2 rounded-lg"
               {...register("description")}
             />
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 lg:grid lg:col-span-2 lg:col-start-3 lg:items-start">
             <label className="font-semibold text-orange-500">
               Select the opportunity type
             </label>
@@ -49,7 +52,7 @@ const PostOpportunities = () => {
               <option value="full-time">Full Time</option>
             </select>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 lg:grid lg:row-start-2 lg:col-span-2">
             <label className="font-semibold text-orange-500">
               Shift and Schedule
             </label>
@@ -62,7 +65,7 @@ const PostOpportunities = () => {
               <option value="holiday">Holidays</option>
             </select>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 lg:row-start-3 lg:col-span-2">
             <label className="font-semibold text-orange-500">
               Remuneration
             </label>
@@ -78,7 +81,7 @@ const PostOpportunities = () => {
               <option value="negotiable">Negotiable</option>
             </select>
           </div>
-          <div>
+          <div className="lg:col-span-2 lg:row-start-3 lg:col-start-1">
             <Input
               label="Application Link"
               name="link"
@@ -97,7 +100,3 @@ const PostOpportunities = () => {
 };
 
 export default PostOpportunities;
-
-// Job type: Permanent, Part-time, Full-Time
-// Shift and schedule: Weekend availability, Holidays
-// Duration: < 1 months,  1 month - 2 month -
