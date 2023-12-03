@@ -17,14 +17,11 @@ const DetailsLink = ({ id }: Props) => {
   return (
     <div>
       <div>
-        <Link
-          to={`/${opportunities}/details/${id}`}
-          className="text-blue-500 lg:hidden"
-        >
+        <Link to={`details/${id}`} className="text-blue-500 lg:hidden">
           More...
         </Link>
         <Link
-          to={`/${opportunities}/${id}`}
+          to={`${id}`}
           className="hidden text-blue-500 lg:block"
           onClick={handleClick}
         >

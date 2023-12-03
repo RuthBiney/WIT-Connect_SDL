@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { aboutUs, signUp } from "../utils/links";
 import AboutPage from "./AboutPage";
 
-const HomePage = () => {
+const LandingPage = () => {
   return (
-    <div className="bg-gray-100">
+    <>
       <header className="object-contain h-screen">
         <div className="h-3/4  bg-[url('hero.webp')] bg-cover bg-center md:bg-right-top ">
           <div className="w-full h-full bg-blue-600/30 backdrop-brightness-75">
@@ -15,6 +15,14 @@ const HomePage = () => {
               <h2 className="text-3xl font-semibold">
                 Home of volunteering opportunities
               </h2>
+              <div className="flex items-center space-x-10">
+                <Link
+                  to={`/${signUp}`}
+                  className="p-4 font-bold text-gray-100 bg-orange-800 border rounded-xl hover:bg-orange-700"
+                >
+                  Sign Up Here
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -22,8 +30,8 @@ const HomePage = () => {
           <AboutPage />
         </div>
       </header>
-    </div>
+    </>
   );
 };
 
-export default HomePage;
+export default LandingPage;

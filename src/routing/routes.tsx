@@ -17,10 +17,30 @@ import PostOpportunities from "../pages/PostOpportunities";
 import OpportunitiesPage from "../pages/OpportunitiesPage";
 import OpportunityDetails from "../components/OpportunityDetails";
 import OpportunityDetailsPage from "../pages/OpportunityDetailsPage";
+import AuthLayout from "./AuthLayout";
+import LandingPage from "../pages/LandingPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <AuthLayout />,
+    children: [
+      {
+        index: true,
+        element: <LandingPage />,
+      },
+      {
+        path: signUp,
+        element: <SignUpPage />,
+      },
+      {
+        path: signIn,
+        element: <SignInPage />,
+      },
+    ],
+  },
+  {
+    path: "/app",
     element: <Layout />,
     children: [
       {
@@ -36,14 +56,6 @@ const router = createBrowserRouter([
         element: <ContactPage />,
       },
       {
-        path: signUp,
-        element: <SignUpPage />,
-      },
-      {
-        path: signIn,
-        element: <SignInPage />,
-      },
-      {
         path: newOpportunity,
         element: <PostOpportunities />,
       },
@@ -57,6 +69,7 @@ const router = createBrowserRouter([
           },
         ],
       },
+
       {
         path: "opportunities/details/:id",
         element: <OpportunityDetailsPage />,

@@ -35,7 +35,9 @@ const OpportunityDetailsPage = () => {
               <h2 className="text-3xl font-bold">Job description</h2>
               <p className="text-lg">{post.description}</p>
               <div className="flex gap-5">
-                <Tag tag="Part Time" />
+                <Tag tag={post.opportunity_type} />
+                <Tag tag={post.remuneration} />
+                <Tag tag={post.job_preference} />
               </div>
             </section>
             <button
@@ -51,7 +53,7 @@ const OpportunityDetailsPage = () => {
             </h1>
             <div>
               <Link
-                to={`/${opportunities}`}
+                to={`/app/${opportunities}`}
                 className="px-4 py-3 text-xl font-bold text-white bg-orange-800 rounded-xl"
               >
                 Go back

@@ -26,7 +26,7 @@ const SignInPage = () => {
   const onSubmit = (data: FieldValues) => {
     console.log(data);
     reset();
-    navigate(`/${opportunities}`);
+    navigate("/app");
   };
 
   return (
