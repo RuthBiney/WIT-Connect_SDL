@@ -1,13 +1,16 @@
 import { FieldValues, useForm } from "react-hook-form";
 import Input from "../components/Input";
+import { useNavigate } from "react-router-dom";
 
 const PostOpportunities = () => {
   const { register, handleSubmit, reset } = useForm();
+  const navigate = useNavigate();
 
   const onSubmit = (data: FieldValues) => {
     console.log(data);
     reset();
     alert("Opportunity added successfully! 🎉🎊. ");
+    navigate("/app");
   };
 
   return (
